@@ -1,0 +1,171 @@
+:root {
+  color-scheme: light dark;
+  --primary-color: #f0f6f0;
+  --secondary-color: #222323;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+  }
+  .icons a:hover ion-icon {
+    color: var(--primary-color);
+  }
+  .icons a:hover {
+    background-color: var(--secondary-color);
+  }
+  .skills li {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+  }
+  .icons a:hover ion-icon {
+    color: var(--secondary-color);
+  }
+  .icons a:hover {
+    background-color: var(--primary-color);
+  }
+  .skills li {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+  }
+}
+@media (max-width: 430px) {
+  .article-personal img {
+    display: none;
+  }
+  .main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+  }
+  .seccion .info-edu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-bottom: 4px;
+  }
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+footer {
+  position: absolute;
+  bottom: 8px;
+}
+footer p {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+
+.main {
+  max-width: 700px;
+  margin: 0px auto;
+  display: flex;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.seccion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.article-personal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article-personal img {
+  border-radius: 16px;
+  width: 100px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.info .name {
+  font-size: 2rem;
+}
+.location {
+  font-size: 1rem;
+  font-weight: 100;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.article-personal .icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  border: 1px solid;
+  border-color: currentColor;
+  border-radius: 4px;
+  text-decoration: none;
+  color: currentColor;
+  width: 32px;
+  height: 32px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+.sobre-mi {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+.info-edu {
+  display: flex;
+  align-items: center;
+}
+.info-edu time {
+  font-size: 0.9rem;
+}
+.info-edu h3 {
+  flex: 1;
+  font-size: 1.1rem;
+}
+.skills {
+  list-style: none;
+  display: inline-flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.skills li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  border-radius: 4px;
+  gap: 4px;
+}
+.skills img {
+  width: 1rem;
+}
